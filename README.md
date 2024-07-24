@@ -15,6 +15,6 @@ Living neovim configuration which I plan to update as I go along.
     - need to manually run :TSInstall <*language*> 
     - languages I like to start with: lua, vim, python, markdown, markdown_inline
 - obsidian notetaking application
-    - configuration has current notes vault as ~/AppData/Roaming/Documents/WorkNotes (yes I use this on Windows)
+    - configuration has current notes vault as ~/AppData/Roaming/Documents/EmployeeHealthWellbeing (yes I use this on Windows)
 
 
