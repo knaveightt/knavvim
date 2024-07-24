@@ -4,8 +4,8 @@ return {
     version = "*",
     lazy = true,
     event = {
-        "BufReadPre " .. vim.fn.expand "~" .. "/AppData/Roaming/Documents/WorkNotes/**.md",
-        "BufNewFile " .. vim.fn.expand "~" .. "/AppData/Roaming/Documents/WorkNotes/**.md",
+        "BufReadPre " .. vim.fn.expand "~" .. "/AppData/Roaming/Documents/EmployeeHealthWellbeing/**.md",
+        "BufNewFile " .. vim.fn.expand "~" .. "/AppData/Roaming/Documents/EmployeeHealthWellbeing/**.md",
     },
     -- ft = "markdown",
     dependencies = {
@@ -14,8 +14,8 @@ return {
     opts = {
         workspaces = {
             {
-                name = "WorkNotes",
-                path = "~/AppData/Roaming/Documents/WorkNotes"
+                name = "EmployeeHealthWellbeing",
+                path = "~/AppData/Roaming/Documents/EmployeeHealthWellbeing"
             },
         },
 
@@ -63,10 +63,19 @@ return {
             return tostring(os.date("%Y%m%d%H%M")) .. "-" .. suffix
         end,
 
+        templates = {
+            folder = "templates",
+            date_format = "%Y-%m-%d",
+            time_format = "%H:%M",
+            -- A map for custom variables, the key should be the variable and the value a function
+            substitutions = {},
+        },
+
     },
     keys = {
         {"<leader>os", "<cmd>ObsidianSearch<CR>", desc = "Search Notes" },
         {"<leader>ot", "<cmd>ObsidianTags<CR>", desc = "Search by Tag" },
+        {"<leader>oi", "<cmd>ObsidianTemplate<CR>", desc = "Insert Template" },
         {"<leader>on", "<cmd>ObsidianNew<CR>", desc = "New Note" },
         {"<leader>od", "<cmd>ObsidianToday<CR>", desc = "Open Daily Note" },
         {"<leader>oo", "<cmd>ObsidianQuickSwitch<CR>", desc = "Open Note by Name" },
