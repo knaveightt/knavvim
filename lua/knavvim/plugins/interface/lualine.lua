@@ -12,7 +12,6 @@ return {
                 disabled_filetypes = {
                     'NvimTree',
                 },
-                theme = "onenord",
             },
         })
     end
