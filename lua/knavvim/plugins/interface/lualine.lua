@@ -11,7 +11,9 @@ return {
             options = {
                 disabled_filetypes = {
                     'NvimTree',
+                    'neo-tree',
                 },
+                theme = "kanagawa",
             },
         })
     end

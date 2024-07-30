@@ -12,7 +12,13 @@ return {
                     text = "File Explorer",
                     text_align = "center",
                     separator = true,
-                }
+                },
+                {
+                    filetype = "neo-tree",
+                    text = "File Explorer",
+                    text_align = "center",
+                    separator = true,
+                },
             },
         },
     },
