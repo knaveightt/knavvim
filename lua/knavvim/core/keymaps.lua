@@ -2,18 +2,11 @@
 vim.g.mapleader=" "
 local keymap = vim.keymap
 
---
--- page scrolling shortcuts
---
-keymap.set("n", "gh", "H")
-keymap.set("n", "gl", "L")
-keymap.set("n", "H", "<C-u>")
-keymap.set("n", "L", "<C-d>")
-
 -- 
 -- buffer shortcuts
 --
 keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Close Buffer" })
+keymap.set("n", "<leader>bh", "<cmd>nohlsearch<CR>", { desc = "Clear Buffer Highlights" })
 
 --
 -- tab shortcuts
