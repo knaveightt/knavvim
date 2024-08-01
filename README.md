@@ -13,7 +13,7 @@ Living neovim configuration which I plan to update as I go along.
 - c compiler i.e. gcc
     - treesitter requirement
     - need to manually run :TSInstall <*language*> 
-    - languages I like to start with: lua, vim, python, markdown, markdown_inline
+    - languages I like to start with: lua, vim, python, markdown, markdown_inline, vimdoc, luadoc
 - obsidian notetaking application
     - configuration has current notes vault as ~/AppData/Roaming/Documents/EmployeeHealthWellbeing (yes I use this on Windows)
 
