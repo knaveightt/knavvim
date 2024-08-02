@@ -2,7 +2,7 @@
 
 Living neovim configuration which I plan to update as I go along.
 
-> Current setup tested for Neovim 0.10.0
+> Current setup tested for Neovim 0.10.1
 
 ## Dependencies
 
