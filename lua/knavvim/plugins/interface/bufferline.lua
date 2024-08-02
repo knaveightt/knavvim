@@ -23,11 +23,9 @@ return {
         },
     },
     keys = {
-        { "<leader>bb", "<cmd>BufferLinePick<CR>", desc = "Bufferline Pick Buffer" },
-        { "<leader>bc", "<cmd>BufferLinePickClose<CR>", desc = "Bufferline Close Buffer" },
-        { "<leader>bn", "<cmd>bnext<CR>", desc = "Next Buffer" },
-        { "<leader>bp", "<cmd>bprevious<CR>", desc = "Prev Buffer" },
-        { "go", "<cmd>bnext<CR>", desc = "Next Buffer" },
-        { "gi", "<cmd>bprevious<CR>", desc = "Prev Buffer" },
+        { "<M-b>", "<cmd>BufferLinePick<CR>", desc = "Bufferline Pick Buffer" },
+        { "<M-c>", "<cmd>BufferLinePickClose<CR>", desc = "Bufferline Close Buffer" },
+        { "go", "<cmd>BufferLineCycleNext<CR>", desc = "Next Buffer" },
+        { "gi", "<cmd>BufferLineCyclePrev<CR>", desc = "Prev Buffer" },
     },
 }

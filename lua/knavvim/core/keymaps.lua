@@ -7,7 +7,9 @@ local keymap = vim.keymap
 --
 keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Close Buffer" })
 keymap.set("n", "<leader>bh", "<cmd>nohlsearch<CR>", { desc = "Clear Buffer Highlights" })
-keymap.set("n", "<leader>B", ":ls<cr>:b<Space>", { desc = "Quick Buffer List Select" })
+keymap.set("n", "<leader>bb", ":ls<cr>:b<Space>", { desc = "Quick Buffer List Select" })
+keymap.set("n", "<leader>bn", "<cmd>bnext<CR>", { desc = "Next Buffer" })
+keymap.set("n", "<leader>bp", "<cmd>bprevious<CR>", { desc = "Prev Buffer" })
 
 --
 -- tab shortcuts
