@@ -4,8 +4,8 @@ return {
     version = "*",
     lazy = true,
     event = {
-        "BufReadPre " .. vim.fn.expand "~" .. "/AppData/Roaming/Documents/EmployeeHealthWellbeing/**.md",
-        "BufNewFile " .. vim.fn.expand "~" .. "/AppData/Roaming/Documents/EmployeeHealthWellbeing/**.md",
+        "BufReadPre " .. vim.fn.expand "~" .. "/Documents/knowledge/**.md",
+        "BufNewFile " .. vim.fn.expand "~" .. "/Documents/knowledge/**.md",
     },
     -- ft = "markdown",
     dependencies = {
@@ -14,8 +14,8 @@ return {
     opts = {
         workspaces = {
             {
-                name = "EmployeeHealthWellbeing",
-                path = "~/AppData/Roaming/Documents/EmployeeHealthWellbeing"
+                name = "knowledge",
+                path = "~/Documents/knowledge"
             },
         },
 
